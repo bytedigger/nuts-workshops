@@ -52,6 +52,7 @@ For all these Admin UIs, use the password `demo`
 # As the service provider for Node 1: Setup the Authority
 
 ![Setup the Authority](images/setup-authority.drawio.svg)
+
 Go to [Admin UI of node 1](http://localhost:1303).
 Name this service provider **Authority SP** since it will be the _Service Provider_ of the authority that issues the validated query credential.
 Set the `Nuts node endpoint of the Service Provider` field to `grpc://node-one:5555`.
@@ -64,6 +65,7 @@ After saving click on the newly created organization and check the `Publish by t
 # As the service provider for Node 2: Setup the Data Consumer
 
 ![Setup the Data Consumer](images/setup-data-consumer.drawio.svg)
+
 Do the same thing for [Admin UI of node 2](http://localhost:2303) and call the _Service Provider_ **Data Consumer SP** since it will be the service provider of the data consumer.
 Set the `Nuts node endpoint of the Service Provider` field to `grpc://node-two:5555`.
 Now create an organization **Data Consumer ORG** which will represent the organization firing of the query.
@@ -71,6 +73,7 @@ Now create an organization **Data Consumer ORG** which will represent the organi
 # As the service provider for Node 3: Setup the Data Producer
 
 ![Setup the Data Producer](images/setup-data-producer.drawio.svg)
+
 Create one last _Service Provider_ for the data producer with the [Admin UI of node 3](http://localhost:3303). Name this service provider **Data Producer SP**.
 Set the `Nuts node endpoint of the Service Provider` field to `grpc://node-three:5555`.
 Lastly, create an organization that acts as the data producer. Name it **Data Producer ORG** or a name of a fictional care organization and publish it on the network.
